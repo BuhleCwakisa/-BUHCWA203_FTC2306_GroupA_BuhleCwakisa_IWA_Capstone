@@ -269,7 +269,7 @@ function handlerSettings(event){
     event.preventDefault();
     const selectedTheme = theme.value; 
 
-     const v = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
+     const i = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
 
     if (selectedTheme === 'night'){
         document.documentElement.style.setProperty('--color-light', `rgb(${css[selectedTheme][0]})`);
